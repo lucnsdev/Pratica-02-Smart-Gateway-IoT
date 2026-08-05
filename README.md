@@ -1,4 +1,4 @@
-#Prática 02 - Smart Gateway IoT: Edge Computing e Filtragem de Dados<br>
+# Prática 02 - Smart Gateway IoT: Edge Computing e Filtragem de Dados<br>
 Atividade prática da disciplina de Programação em Ambiente de Rede.<br><br>
 
 Integrantes:<br>
