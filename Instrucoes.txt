@@ -1,0 +1,22 @@
+1 - O projeto so funciona se o Mosquitto estiver instalado, pois ele é o servidor local que recebe os dados dos sensores e retransmite para o gateway.
+Link: https://mosquitto.org/download/
+Ele é um serviço que é executado em segundo plano, nao possui interface grafica.
+E so instalar. Nao precisa fazer mais nada. Ele entra em execução sozinho depois da instalacao.
+
+2 - No script "criador_sensores_virtuais.py" deve ser ajustado o numero de sensores na linha 11. Pois na ativiade pede 30.
+Mas isso provoca uma chuva de e-mails chegando na caixa de entrada por mais que você reduza a probabilidade de temperaturas altas.
+Para teste e ver funcionando, deixe 2 ou 3.
+
+3 - Breve explicação do funcionamento:
+    O criador_sensores_virtuais apenas cria a pasta confi e os respectivos arquivos de consiguração de cada sensor.
+    O simulador_sensores.py lê esses arquivos e usa como base de valores aleatorios para enviar ao servidor MQTT.
+    O smart_gateway.py é o receptor que recebe os dados que foram enviados ao servidor e interpreta, verificando se há anomalias(Temperaturas altas.
+    Se tiver anomalias ele envia uma mensagem de email com um alerta.
+    A cada segundo ele envia a "media_final" das temperaturas para o firebase database.
+
+4 - Sequencia correta para executar:
+    - criador_sensores_virtuais.py basta executar 1x.
+    - smartgateway.py
+    - simulador_sensores.py
+
+Obs: requeriments.txt foi gerado pelo PyCharm com o comando "pip freeze > requirements.txt"
