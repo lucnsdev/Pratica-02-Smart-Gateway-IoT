@@ -1,11 +1,11 @@
-#Prática 02 - Smart Gateway IoT: Edge Computing e Filtragem de Dados
-Atividade prática da disciplina de Programação em Ambiente de Rede.
+#Prática 02 - Smart Gateway IoT: Edge Computing e Filtragem de Dados<br>
+Atividade prática da disciplina de Programação em Ambiente de Rede.<br><br>
 
-Integrantes:
-2025014780 - Rodrigo Lima Diôgo
-2025014458 - Francisco Robson Paulino Cruz
-2025014645 - Júlio César Batista da Silva
-2023011420 - Maria da Conceição Freitas Lopes
-2025014485 - Gabriela Araújo Lourenço
-2023011395 - Lucas do Nascimento Souza
-2025014206 - Thalyson de Sousa Batista Maia
+Integrantes:<br>
+2025014780 - Rodrigo Lima Diôgo<br>
+2025014458 - Francisco Robson Paulino Cruz<br>
+2025014645 - Júlio César Batista da Silva<br>
+2023011420 - Maria da Conceição Freitas Lopes<br>
+2025014485 - Gabriela Araújo Lourenço<br>
+2023011395 - Lucas do Nascimento Souza<br>
+2025014206 - Thalyson de Sousa Batista Maia<br>
