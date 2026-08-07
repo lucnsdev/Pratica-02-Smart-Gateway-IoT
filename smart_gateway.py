@@ -1,3 +1,4 @@
+from datetime import datetime
 import json
 import threading
 import time
@@ -85,7 +86,10 @@ def processador_estatistico_borda():
                 print(f"[EDGE LOG] Janela de 1s encerrada. Pacotes Locais Recebidos: {total_pacotes_no_segundo}")
                 print(f"[EDGE LOG] Média consolidada da fábrica: {media_final:.2f}°C")
 
-                media_final = {"media_final": media_final}
+                timestamp = datetime.now().timestamp()
+                media_final = {"datetime": str(datetime.fromtimestamp(timestamp)), "media_final": media_final}
+                print("----------------------------")
+                print(json.dumps(media_final))
                 contador_dados_enviados += len(json.dumps(media_final))
                 enviar_para_firebase(media_final)
 
